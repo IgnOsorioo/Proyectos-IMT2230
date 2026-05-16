@@ -4,27 +4,21 @@
 
 Análisis Semántico Latente (LSA) sobre un corpus de 294 artículos de Wikipedia en español, usando la descomposición en valores singulares (SVD) de la matriz término-documento TF-IDF.
 
-📄 **Informe final**: [`Entregables/Informe.pdf`](Entregables/Informe.pdf)
-📓 **Notebook**: [`Entregables/lsa_svd.ipynb`](Entregables/lsa_svd.ipynb) · versión ejecutada en [`Entregables/lsa_svd_ejecutado.ipynb`](Entregables/lsa_svd_ejecutado.ipynb)
-🖼️ **Figuras**: [`Entregables/Figuras/`](Entregables/Figuras/)
+**Informe final**: [`Entregables/Informe.pdf`](Entregables/Informe.pdf)
+**Notebook**: [`Entregables/lsa_svd.ipynb`](Entregables/lsa_svd.ipynb) · versión ejecutada en [`Entregables/lsa_svd_ejecutado.ipynb`](Entregables/lsa_svd_ejecutado.ipynb)
+**Figuras**: [`Entregables/Figuras/`](Entregables/Figuras/)
 
 ---
 
 ## Estructura del repositorio
 
-```
-.
-├── Enunciado.md                 # Enunciado del proyecto
-├── Enunciado.pdf
-├── README.md                    # este archivo
-├── requirements.txt             # dependencias de Python
-├── corpus_wikipedia.csv         # corpus cacheado (294 documentos, 5 categorías)
+├── README.md                    # Este archivo
+├── corpus_wikipedia.csv         # Corpus cacheado (294 documentos, 5 categorías)
 └── Entregables/
-    ├── Informe.pdf              # informe final (entregable principal)
-    ├── Informe.md               # informe en markdown (fuente)
-    ├── generar_informe.py       # script que genera Informe.pdf desde el contenido
-    ├── lsa_svd.ipynb            # notebook fuente
-    ├── lsa_svd_ejecutado.ipynb  # notebook con outputs y figuras embebidas
+    ├── Informe.pdf              # Informe final
+    ├── lsa_svd.ipynb            # Notebook fuente
+    ├── lsa_svd_ejecutado.ipynb  # Notebook con outputs y figuras generadas
+    ├── requirements.txt         # Dependencias de Python
     └── Figuras/
         ├── valores_singulares.png
         ├── documentos_2d.png
@@ -37,14 +31,13 @@ Análisis Semántico Latente (LSA) sobre un corpus de 294 artículos de Wikipedi
 
 ## Instalación
 
-Requiere Python 3.10+ (probado con 3.13).
+Requiere Python 3.10+ (desarrollado con 3.13).
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Las dependencias son: `numpy`, `pandas`, `matplotlib`, `seaborn`, `scikit-learn`, `nltk`, `wikipedia-api`. Para regenerar el PDF también se necesita `reportlab` (`pip install reportlab Pillow`).
-
+Las dependencias son: `numpy`, `pandas`, `matplotlib`, `seaborn`, `scikit-learn`, `nltk`, `wikipedia-api`.
 ---
 
 ## Cómo reproducir los resultados
@@ -115,12 +108,3 @@ Discusión completa, figuras y conclusiones en [`Entregables/Informe.pdf`](Entre
 El notebook contiene listas de títulos por categoría y descarga cada artículo con `wikipedia-api`. Si un título no existe exactamente con el nombre buscado o el resumen tiene menos de 150 caracteres, se omite. El resultado se cachea en `corpus_wikipedia.csv`.
 
 Para forzar una descarga nueva, borrar `corpus_wikipedia.csv` antes de ejecutar.
-
----
-
-## Créditos
-
-Proyecto académico para el curso **IMT2230 Álgebra Lineal Avanzada y Modelamiento**, Pontificia Universidad Católica de Chile.
-
-- Profesor: Felipe Urrutia.
-- Ayudante: Luis Castillo.
