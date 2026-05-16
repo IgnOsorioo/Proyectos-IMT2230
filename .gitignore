@@ -1,0 +1,21 @@
+# Enunciado del proyecto
+Enunciado.pdf
+
+# Datos del sistema
+.DS_Store
+Thumbs.db
+
+# Caché de Python
+__pycache__/
+
+# Caché de Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Configuraciones locales del IDE
+.vscode/
+.idea/
