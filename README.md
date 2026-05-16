@@ -11,7 +11,7 @@ Análisis Semántico Latente (LSA) sobre un corpus de 294 artículos de Wikipedi
 ---
 
 ## Estructura del repositorio
-
+```text
 ├── README.md                    # Este archivo
 ├── corpus_wikipedia.csv         # Corpus cacheado (294 documentos, 5 categorías)
 └── Entregables/
