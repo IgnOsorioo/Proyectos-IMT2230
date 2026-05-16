@@ -2,12 +2,15 @@
 
 **IMT2230 · Álgebra Lineal Avanzada y Modelamiento — Pontificia Universidad Católica de Chile**
 
+**Integrantes:**
+* Reinaldo Oliva Morales
+* Ignacio Osorio Orellana
+
 Análisis Semántico Latente (LSA) sobre un corpus de 294 artículos de Wikipedia en español, usando la descomposición en valores singulares (SVD) de la matriz término-documento TF-IDF.
 
-**Informe final**: [`Entregables/Informe.pdf`](Entregables/Informe.pdf)
-**Notebook**: [`Entregables/lsa_svd.ipynb`](Entregables/lsa_svd.ipynb) · versión ejecutada en [`Entregables/lsa_svd_ejecutado.ipynb`](Entregables/lsa_svd_ejecutado.ipynb)
-**Figuras**: [`Entregables/Figuras/`](Entregables/Figuras/)
-
+**Informe final**: [`Informe.pdf`](Informe.pdf)  
+**Notebook**: [`lsa_svd_ejecutado.ipynb`](lsa_svd_ejecutado.ipynb)  
+**Figuras**: [`Figuras/`](Figuras/)
 ---
 
 ## Estructura del repositorio
