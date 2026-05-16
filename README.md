@@ -8,11 +8,6 @@
 
 Análisis Semántico Latente (LSA) sobre un corpus de 294 artículos de Wikipedia en español, usando la descomposición en valores singulares (SVD) de la matriz término-documento TF-IDF.
 
-**Informe final**: [`Informe.pdf`](Informe.pdf)  
-**Notebook**: [`lsa_svd_ejecutado.ipynb`](lsa_svd_ejecutado.ipynb)  
-**Figuras**: [`Figuras/`](Figuras/)
----
-
 ## Estructura del repositorio
 ```text
 ├── README.md                    # Este archivo
